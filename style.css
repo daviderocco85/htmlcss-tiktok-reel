@@ -1,0 +1,247 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	font-family: 'TikTok Sans', sans-serif;
+}
+
+video {
+	height: 100%;
+	width: 100%;
+	display: block;
+	object-position: center;
+	object-fit: cover;
+}
+
+.reel-page {
+	height: 100vh; 
+	max-width: 512px;
+	min-width: 400px;
+	position: relative;
+}
+
+/*header*/
+.reel-header {
+    display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+    top: 20px;
+  	left: 0;
+	right: 0;
+    gap:10px;	
+}
+
+
+/*icons header*/
+.reel-header i.bi-play-btn  {
+    font-size: 25px;
+    margin-right: 100px;
+    color: #ffff;
+}
+
+.reel-header i.bi-search {
+    font-size: 25px;
+    margin-left: 100px;
+    color: #ffff;
+ 
+}
+
+.reel-header i.bi-plus-circle-fill {
+     display: flex;
+     align-items: center;
+     position: absolute;
+     font-size: 7px;
+     border-radius: 50%;
+     background: #642d60;
+     color: #642d60;
+     bottom:25px;
+     right: 213px;
+
+}
+
+/*h2 header*/
+.reel-header h2 {
+    font-size: 18px;
+    color: #5b78a0;
+}
+
+
+
+.reel-header #border {
+    position: relative;
+    color:#ffff;
+}
+
+.reel-header #border::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 50%;              
+    transform: translateX(-50%);
+    border-bottom: 3px solid #fff;
+}
+
+/*h2 and p above footer*/
+.reel-page .above-footer h2 {
+    display: flex;
+    position: absolute;
+    font-size: 15px;
+    top:668px;
+    left: 16px;
+    color: #fff;
+}
+
+.reel-page .above-footer p {
+    display: flex;
+    position: absolute;
+    font-size: 15px;
+    font-weight: 500;
+    top:697px;
+    left: 16px;
+    color: #fff;
+}
+
+
+
+
+
+/* footer */
+
+footer {
+    display: flex;
+	position: absolute;
+    align-items: center;
+    min-height: 100px;
+	justify-content: space-around;
+    left: 0;
+	right: 0;
+	bottom: 0;
+	color: #fff;
+    background-color: black;
+}
+
+footer .nav-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    font-size: 10px;
+}
+
+/*icons footer*/
+footer .nav-item i {
+    font-size: 25px; 
+}
+
+footer .nav-item i.bi-people,
+footer .nav-item i.bi-chat-square,
+footer .nav-item i.bi-person,
+footer .nav-item #gray {
+    color: #938f8f;
+}
+
+
+/*central icon footer*/
+footer .icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 30px;
+    border-radius: 12px;
+    box-shadow: 
+        -4px 0 8px #00eaff,   
+         4px 0 8px #ff00cc;     
+}   
+          
+
+footer .icon-wrapper i.bi-file-plus-fill {
+     margin-left: -3px;
+     font-size: 40px;
+     transform: rotate(90deg);     
+}
+     
+
+
+/*badge notification*/
+.badge {
+  display: inline-flex;
+  position: absolute;
+  top:24px;
+  right: 136px;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 16px;
+  padding: 0 6px;
+  background: #ff3b30; 
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 999px; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+	padding: 0 16px;
+	position: absolute;
+	right: 0;
+	top: 40%;
+    gap:30px;
+}
+
+/*profile image icon*/
+.sidebar figure img {
+  
+    width: 50px;          
+    height: 50px;
+    border-radius: 50%;    
+    object-fit: cover;     
+    border: 2px solid #fff; 
+
+}
+
+/*icon aroud profile image*/
+.sidebar figure i {
+     display: flex;
+     flex-direction: column; 
+     align-items: center;
+     position: absolute;
+     font-size: 20px;
+     border-radius: 50%;
+     background: #ffff;
+     color:#ff3b30;
+     top: 41px;
+     left: 31px;
+
+}
+
+/*icons sidebar*/
+.sidebar .side-item i {
+     display: flex;
+     flex-direction: column; 
+     align-items: center;
+     color: #ffff;
+     font-size: 25px;
+}
+
+.sidebar .side-item #white {
+     display: flex;
+     flex-direction: column; 
+     align-items: center;
+     color: #ffff;
+}
