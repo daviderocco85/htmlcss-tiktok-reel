@@ -3,6 +3,9 @@
 Mobile HTML and CSS layout inspired by TikTok, 
 designed for advanced web development.
 
+# Demo Live
+[**Click here for demo**](https://daviderocco85.github.io/htmlcss-tiktok-reel/)
+
 # Target 
 The task consists of placing the elements (icon and text) within the layout using the CSS Flexbox method
 
