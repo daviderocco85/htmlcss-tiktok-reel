@@ -24,40 +24,44 @@
 </head>
 
 <body>
-  <!-- Container della pagina, necessario per via del layout particolare -->
+ 
   <div class="reel-page">
     <video src="assets/video/coder.mp4" autoplay muted loop></video>
 
     <!-- Header -->
     <header class="reel-header">
-       <i class="bi bi-play-btn"></i>
-       <h2>Esplora</h2>
+      <button class="left">
+         <i class="bi bi-play-btn"></i>
+      </button>
+       <a href="#">Esplora</a>
        <i class="bi bi-plus-circle-fill"></i>
-       <h2>Seguiti</h2>
-       <h2 id="border">Per te</h2>
-       <i class="bi bi-search"></i>
+       <a href="#">Seguiti</a>
+       <a href="#" id="border">Per te</a>
+       <button class="right">
+         <i class="bi bi-search"></i>
+       </button>
     </header>
 
     <!-- Sidebar -->
     <div class="sidebar">
          <figure>
              <img src="assets/img/boolean_logo.png" alt="logo">
-             <i class="bi bi-plus-circle-fill"></i>
+             <button class="circle">+</button>
          </figure>
          <div class="side-item">
-             <i class="bi bi-heart-fill"></i>
+             <button><i class="bi bi-heart-fill"></i></button>
              <span id="white">588</span>
          </div>
          <div class="side-item">
-            <i class="bi bi-chat-dots-fill"></i>
+            <button><i class="bi bi-chat-dots-fill"></i></button>
              <span id="white"> 13</span>
          </div>
          <div class="side-item">
-            <i class="bi bi-bookmark-fill"></i>
-            <span id="white" >638</span>
+            <button><i class="bi bi-bookmark-fill"></i></button>
+            <span id="white">638</span>
          </div>
          <div class="side-item">
-            <i class="bi bi-sign-turn-slight-right-fill"></i>
+            <button><i class="bi bi-sign-turn-slight-right-fill"></i></button>
             <span id="white">491</span>
          </div>
     </div>
@@ -74,29 +78,33 @@
 
     <!-- Footer -->
     <footer>
-            <div class="nav-item">
-                <i class="bi bi-house-fill"></i>
-                  <span>Home</span>
+            <div class="nav-item-white">
+                <a href="#">
+                  <i class="bi bi-house-fill"></i>
+                </a>
+                  <span id="white">Home</span>
             </div>
             <div class="nav-item">
-                <i class="bi bi-people"></i>
-                  <span id="gray">Amici</span>
+                <a href="#">
+                  <i class="bi bi-people"></i>
+                </a>
+                  <span>Amici</span>
             </div>
-            <div class="icon-wrapper">
-                <i class="bi bi-file-plus-fill"></i>    
-            </div>
+            <button id="add">+</button>   
             <div class="nav-item">
                <div class="badge">19</div>     
-                <i class="bi bi-chat-square"></i>
-                  <span id="gray">Posta in arrivo</span>
+                <a href="#">
+                  <i class="bi bi-chat-square"></i> 
+                </a>
+                  <span>Posta in arrivo</span>
             </div>
             <div class="nav-item">
-                <i class="bi bi-person"></i>
-                  <span id="gray">Profilo</span>
+                <a href="#">
+                  <i class="bi bi-person"></i>
+                </a>
+                  <span>Profilo</span>
             </div>
     </footer>
   </div>
-
 </body>
-
 </html>

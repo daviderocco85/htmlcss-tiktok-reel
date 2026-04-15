@@ -16,6 +16,21 @@ video {
 	object-position: center;
 	object-fit: cover;
 }
+ 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+     background-color: transparent;
+     border: none;
+     color: #ffff; 
+     font-size: 22px;
+     cursor: pointer; 
+}
+
+
 
 .reel-page {
 	height: 100vh; 
@@ -30,27 +45,24 @@ video {
 	position: absolute;
 	align-items: center;
 	justify-content: center;
-    top: 20px;
+    top: 25px;
   	left: 0;
 	right: 0;
     gap:10px;	
 }
 
-
-/*icons header*/
-.reel-header i.bi-play-btn  {
-    font-size: 25px;
-    margin-right: 100px;
-    color: #ffff;
+/*buttons header*/
+.reel-header .left {
+   margin-right: 100px;
+     
 }
 
-.reel-header i.bi-search {
-    font-size: 25px;
-    margin-left: 100px;
-    color: #ffff;
- 
-}
+.reel-header .right {
+     margin-left: 100px;
+     
+ }
 
+ /*icon on Seguiti*/
 .reel-header i.bi-plus-circle-fill {
      display: flex;
      align-items: center;
@@ -59,19 +71,21 @@ video {
      border-radius: 50%;
      background: #642d60;
      color: #642d60;
-     bottom:25px;
-     right: 213px;
+     bottom:21px;
+     right: 218px;
 
 }
 
-/*h2 header*/
-.reel-header h2 {
-    font-size: 18px;
+/*a header*/
+.reel-header a {
+ 
+    font-weight: 600;
+    font-size: 16px;
     color: #5b78a0;
 }
 
 
-
+/*border Per te */
 .reel-header #border {
     position: relative;
     color:#ffff;
@@ -124,6 +138,7 @@ footer {
 	bottom: 0;
 	color: #fff;
     background-color: black;
+    
 }
 
 footer .nav-item {
@@ -131,44 +146,54 @@ footer .nav-item {
     flex-direction: column; 
     align-items: center;
     font-size: 10px;
-}
-
-/*icons footer*/
-footer .nav-item i {
-    font-size: 25px; 
-}
-
-footer .nav-item i.bi-people,
-footer .nav-item i.bi-chat-square,
-footer .nav-item i.bi-person,
-footer .nav-item #gray {
     color: #938f8f;
 }
 
+footer .nav-item-white {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    font-size: 25px;
+    color: #ffff;
+}
 
-/*central icon footer*/
-footer .icon-wrapper {
+
+
+/*a footer*/
+footer .nav-item a {
+   font-size: 25px; 
+}
+
+footer #white {
+   font-size: 10px; 
+}
+
+
+
+
+/*button central*/
+     
+footer #add {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 38px;
+    font-size: 22px;
+    width: 40px;
     height: 30px;
-    border-radius: 12px;
+    background-color: #fff;
+    color: black;
+    border-radius: 9px;
     box-shadow: 
-        -4px 0 8px #00eaff,   
-         4px 0 8px #ff00cc;     
-}   
-          
-
-footer .icon-wrapper i.bi-file-plus-fill {
-     margin-left: -3px;
-     font-size: 40px;
-     transform: rotate(90deg);     
-}
+        -3px 0 0px #00eaff,   
+         3px 0 0px #ff00cc;  
      
+}
 
 
-/*badge notification*/
+    
+
+
+/*badge notification on Posta in arrivo*/
 .badge {
   display: inline-flex;
   position: absolute;
@@ -215,33 +240,39 @@ footer .icon-wrapper i.bi-file-plus-fill {
 
 }
 
-/*icon aroud profile image*/
-.sidebar figure i {
+
+
+/* button aroud profile image*/
+ .sidebar figure .circle {
      display: flex;
      flex-direction: column; 
+     justify-content: center;
      align-items: center;
      position: absolute;
-     font-size: 20px;
+     width: 22px;
+     height: 22px;
+     font-size: 24px;
      border-radius: 50%;
-     background: #ffff;
-     color:#ff3b30;
-     top: 41px;
-     left: 31px;
-
+     background: #ff3b30;
+     color:#fff;
+     top: 39px;
+     left: 30px;
 }
 
-/*icons sidebar*/
-.sidebar .side-item i {
+/* settings icons sidebar*/
+.sidebar .side-item {
      display: flex;
      flex-direction: column; 
      align-items: center;
      color: #ffff;
      font-size: 25px;
+    
 }
 
 .sidebar .side-item #white {
      display: flex;
      flex-direction: column; 
      align-items: center;
+     font-size: 15px;
      color: #ffff;
 }
