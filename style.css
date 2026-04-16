@@ -26,7 +26,7 @@ button {
      background-color: transparent;
      border: none;
      color: #ffff; 
-     font-size: 22px;
+     font-size: 25px;
      cursor: pointer; 
 }
 
@@ -44,37 +44,26 @@ button {
     display: flex;
 	position: absolute;
 	align-items: center;
-	justify-content: center;
-    top: 25px;
+	justify-content: space-between;
+    top: 20px;
   	left: 0;
 	right: 0;
     gap:10px;	
 }
 
 /*buttons header*/
-.reel-header .left {
-   margin-right: 100px;
-     
-}
 
-.reel-header .right {
-     margin-left: 100px;
-     
+ .reel-header button {
+
+    padding: 16px 28.4px;
+ }  
+ 
+/* nav menu*/
+ nav {
+    display: flex;
+    gap: 10px;
  }
 
- /*icon on Seguiti*/
-.reel-header i.bi-plus-circle-fill {
-     display: flex;
-     align-items: center;
-     position: absolute;
-     font-size: 7px;
-     border-radius: 50%;
-     background: #642d60;
-     color: #642d60;
-     bottom:21px;
-     right: 218px;
-
-}
 
 /*a header*/
 .reel-header a {
@@ -83,8 +72,20 @@ button {
     font-size: 16px;
     color: #5b78a0;
 }
-
-
+/*new content on seguiti*/
+.reel-header #new {
+     position: relative;
+}
+.reel-header #new::after {
+     content: '';
+     position: absolute;
+     top: -4px;
+     right: -6px;
+     width: 7px;
+     height: 7px;
+     background-color: #642d60;
+     border-radius: 50%;
+}
 /*border Per te */
 .reel-header #border {
     position: relative;
@@ -132,13 +133,11 @@ footer {
 	position: absolute;
     align-items: center;
     min-height: 100px;
-	justify-content: space-around;
+   	justify-content: space-around;
     left: 0;
 	right: 0;
 	bottom: 0;
-	color: #fff;
-    background-color: black;
-    
+    background-color: black;  
 }
 
 footer .nav-item {
@@ -149,26 +148,20 @@ footer .nav-item {
     color: #938f8f;
 }
 
-footer .nav-item-white {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    font-size: 25px;
+/*buttons footer*/
+footer .nav-item button {
+    color: #938f8f;
+}
+
+footer .nav-item button.white{
     color: #ffff;
 }
 
 
-
-/*a footer*/
-footer .nav-item a {
-   font-size: 25px; 
+footer span#white {
+    font-size: 10px; 
+    color: #ffff;
 }
-
-footer #white {
-   font-size: 10px; 
-}
-
-
 
 
 /*button footer central*/
@@ -185,12 +178,10 @@ footer #add {
     border-radius: 9px;
     box-shadow: 
         -3px 0 0px #00eaff,   
-         3px 0 0px #ff00cc;  
-     
+         3px 0 0px #ff00cc;    
 }
 
 
-    
 
 
 /*badge notification on Posta in arrivo*/
@@ -231,13 +222,11 @@ footer #add {
 
 /*profile image icon*/
 .sidebar figure img {
-  
     width: 50px;          
     height: 50px;
     border-radius: 50%;    
     object-fit: cover;     
     border: 2px solid #fff; 
-
 }
 
 
@@ -259,17 +248,15 @@ footer #add {
      left: 30px;
 }
 
-/* settings icons sidebar*/
+/* settings buttons icons sidebar*/
 .sidebar .side-item {
      display: flex;
      flex-direction: column; 
      align-items: center;
-     color: #ffff;
-     font-size: 25px;
-    
 }
+     
 
-.sidebar .side-item #white {
+.sidebar .side-item span#white {
      display: flex;
      flex-direction: column; 
      align-items: center;
