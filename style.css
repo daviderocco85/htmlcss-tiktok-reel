@@ -102,12 +102,14 @@ button {
     border-bottom: 3px solid #fff;
 }
 
-/*h2 and p above footer*/
-.reel-page .above-footer h2 {
+/*a, p and button above footer*/
+.reel-page .above-footer a {
     display: flex;
     position: absolute;
+    padding: 6px 8px 6px;
+    font-weight: 800;
     font-size: 15px;
-    top:668px;
+    bottom:160px;
     left: 16px;
     color: #fff;
 }
@@ -115,13 +117,22 @@ button {
 .reel-page .above-footer p {
     display: flex;
     position: absolute;
+    padding: 6px 8px 6px;
     font-size: 15px;
     font-weight: 500;
-    top:697px;
+    bottom:110px;
     left: 16px;
     color: #fff;
 }
 
+.reel-page .above-footer button {
+    display: flex;
+    position: absolute;
+    font-size: 15px;
+    font-weight: 700;
+    bottom:7px;
+    left: 105px;
+}
 
 
 
@@ -132,13 +143,16 @@ footer {
     display: flex;
 	position: absolute;
     align-items: center;
+    justify-content: space-around; 
     min-height: 100px;
-   	justify-content: space-around;
     left: 0;
 	right: 0;
 	bottom: 0;
     background-color: black;  
+    
 }
+
+
 
 footer .nav-item {
     display: flex;
@@ -153,39 +167,17 @@ footer .nav-item button {
     color: #938f8f;
 }
 
-footer .nav-item button.white{
+footer .nav-item button.white {
     color: #ffff;
 }
 
-
-footer span#white {
-    font-size: 10px; 
-    color: #ffff;
+footer .nav-item button#note-badge {
+    position: relative;
 }
 
 
-/*button footer central*/
-     
-footer #add {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    width: 40px;
-    height: 30px;
-    background-color: #fff;
-    color: black;
-    border-radius: 9px;
-    box-shadow: 
-        -3px 0 0px #00eaff,   
-         3px 0 0px #ff00cc;    
-}
-
-
-
-
-/*badge notification on Posta in arrivo*/
-.badge {
+/*badge notification on button Posta in arrivo*/
+ .badge{
   display: inline-flex;
   position: absolute;
   top:24px;
@@ -201,7 +193,38 @@ footer #add {
   font-weight: 600;
   border-radius: 999px; 
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 1;
 }
+
+
+
+footer span#white {
+    font-size: 10px; 
+    color: #ffff;
+}
+
+
+/*button footer central*/
+     
+footer #add {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left:10px;
+    font-size: 22px;
+    width: 40px;
+    height: 30px;
+    background-color: #fff;
+    color: black;
+    border-radius: 9px;
+    box-shadow: 
+        -3px 0 0px #00eaff,   
+         3px 0 0px #ff00cc;    
+}
+
+
+
 
 
 
